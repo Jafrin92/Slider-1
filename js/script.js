@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //   auto slide
   let autoSlide = setInterval(function () {
     updateSlider(currentSlide + 1);
-  }, 2000);
+  }, 3000);
 
   slides.addEventListener("mouseenter", function () {
     clearInterval(autoSlide);
@@ -67,6 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
   slides.addEventListener("mouseleave", function () {
     autoSlide = setInterval(function () {
       updateSlider(currentSlide + 1);
-    }, 2000);
+    }, 3000);
   });
 });
